@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to my website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="img/bed.png">
+    <h1>hi</h1>
+    <p>This is baldi website</p>
+    <p>As you can see, it's still in development</p>
+
+    <a href="https://www.youtube.com">
+        <button style="background-color:#00e1ff;color: blue;font-size: 30px;">go youtube</button>
+    </a>
+
+    <button onclick="doSomething()" style="background-color:#00e1ff;color: blue;font-size: 30px;">click for SUS</button>
+
+    <button onclick="openPopup()" style="background-color:#00e1ff;color: blue;font-size: 30px;">click for popup</button>
+
+    <p id="sus">what the heck</p>
+
+    <img class="baldiimage" src="img/baldi.png" alt="sus">
+
+    <script>
+        function doSomething(){
+            document.getElementById("sus").innerHTML = "SUS"
+        }
+    </script>
+
+    <p style="font-size: 30px;">lol</p>
+
+    <audio controls loop>
+        <source src="audio/mus_Learn.wav" type="audio/mpeg">
+    </audio>
+
+    <audio controls loop>
+        <source src="audio/mus_School.wav" type="audio/mpeg">
+    </audio>
+
+    <h1>SUSSY BAKA</h>
+
+    <h1 class="home">About Me</h1>
+
+    <div class="dialog">
+        <div class="popup" id="popup">
+            <h2>Thanks</h2>
+            <p>You found me :)</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+    <a href="./sus.jar" class="download-btn">Download Meteor Client</a>
+</body>
+
+</html>
